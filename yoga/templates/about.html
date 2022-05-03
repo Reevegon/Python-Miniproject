@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+    <title>Document</title>
+    <style>
+    .body    {
+      background-color: aquamarine;
+    }  
+    </style>
+</head>
+<body id="bg" style="background-image: url('{% static "images/img.jpg"%}');">
+    <!-- <img src="{%static 'images/img3.jpg'%}" alt=""> -->
+    <header class="main-header_1">
+        <div class="header-nav">
+            <a href="#" class="logo link">ABOUT US</a>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="http://127.0.0.1:8000/" class="nav-link link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href='about' class="nav-link link">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="http://127.0.0.1:8000/contact/" class="nav-link link">Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.ayuryoga-ashram.com/blog/" class="nav-link link">Blogs</a>
+                    </li>
+                    
+                </ul>
+            </nav>
+            <div class="hero-content">
+                <h1 class="main-heading">‘Yoga healthcare’ is a globally praised yoga organisation.<span class="main-heading-focus"><br>where, <br> We cure people naturally <br>without any sideffects,<br> "Stay Healthy Stay Fit"</span> </h1>
+                <p class="sub-heading"></p>
+                
+            </div>
+       
+    
+</body>
+</html>

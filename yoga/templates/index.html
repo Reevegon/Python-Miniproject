@@ -1,0 +1,354 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Yoga Website</title>
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+
+</head>
+ 
+<body id="bg" style="background-image: url('{% static "images/img3.jpg"%}');">
+     
+    <!-- <img src="{%static 'images/img3.jpg'%}" alt="">     -->
+    <header class="main-header">
+        <div class="header-nav">
+            <a href="#" class="logo link">YOGA HEALTHCARE</a>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href='#' class="nav-link link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href='about' class="nav-link link">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href='contact' class="nav-link link">Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.ayuryoga-ashram.com/blog/" class="nav-link link">Blogs</a>
+                    </li>
+                    
+                </ul>
+            </nav>
+        </div>
+        <div class="hero-content">
+            <h1 class="main-heading">"Yoga is the journey <span class="main-heading-focus">of <br> The Self, <br> To The
+                    Self, <br> Through The Self”</span> </h1>
+            <p class="sub-heading"></p>
+            <a href='http://127.0.0.1:8000/index1/' class="hero-cta link">Explore YOGA</a>
+            
+        </div>
+    </header>
+
+    <!-- <main class="main-container">
+        <div class="card-container">
+            <p class="main-card-title">Some Important Yoga Poses With Benifits</p>
+            <div class="card-content">
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="img/yoga-pose-1.png" alt="" class="card-img">
+                        <div class="card-info">
+                            <ul class="card-info-list">
+                                <li class="card-info-item">• It strengthens your shoulder, back, arms, and legs strong.</li>
+                                <li class="card-info-item">• It helps to improve balance.</li>
+                                <li class="card-info-item">• It helps to improve digestion.</li>
+                                <li class="card-info-item">• It helps to improve metabolism.</li>
+                                <li class="card-info-item">• It helps in stretching the abdomen, thighs and groin.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="card-title">NATRAJASANA <span class="card-span">(Lord of The Dance Pose)</span></p>
+                </div>
+
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="img/yoga-pose-2.png" alt="" class="card-img">
+                        <div class="card-info">
+                            <ul class="card-info-list">
+                                <li class="card-info-item">Strengthens the back and abdominal muscles.</li>
+                                <li class="card-info-item">Stimulates the reproductive organs.</li>
+                                <li class="card-info-item">Tones the leg and arm muscles.</li>
+                                <li class="card-info-item">Alleviates stress and fatigue.</li>
+                                <li class="card-info-item">Helps people with renal (kidney) disorders.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="card-title">DHANURASANA <span class="card-span">(Bow Pose)</span></p>
+                </div>
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="img/yoga-pose-3.png" alt="" class="card-img">
+                        <div class="card-info">
+                            <ul class="card-info-list">
+                                <li class="card-info-item"> •Opens up the shoulders and neck to relieve pain.</li>
+                                <li class="card-info-item"> •Tones the abdomen.</li>
+                                <li class="card-info-item"> •Improves flexibility of the upper and middle back.</li>
+                                <li class="card-info-item"> •Expands the chest.</li>
+                                <li class="card-info-item"> •Useful for people with respiratory disorders such as asthma.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="card-title">BHUJANGASANA <span class="card-span">(Cobra Pose)</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner-container">
+            <div class="banner-img-container">
+                <img src="img/banner-img-1.jpg" alt="" class="banner-img">
+            </div>
+            <div class="banner-content-container">
+                <div class="banner-content">
+                    <h3 class="banner-title">Natural Environment Yoga</h3>
+                    <p class="banner-desc">
+                        Yoga’s connection with nature and its concern for the environment is easily obscured,
+                        if not lost, in the modern Yoga movement and its urban and commercial orientation. 
+                        Such a Yoga of nature is hard to fit into our modern hectic life-styles that have 
+                        little time or space for something sacred to unfold of its own accord, though this 
+                        is the real movement of Yoga.
+                    </p>
+                    <a href="file:///C:/Users/91985/Downloads/vs%20mp/New%20folder/Video-Gallery-main1/index.html" class="banner-cta link">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner-container">
+            <div class="banner-content-container">
+                <div class="banner-content">
+                    <h3 class="banner-title">Friendly Environment Yoga</h3>
+                    <p class="banner-desc">
+                        Social scientists say that it's harder to make friends as adults. 
+                        But Neal Pollack has found that yoga has filled his life with many true friendships.
+
+                    </p>
+                    <a href="file:///C:/Users/91985/Downloads/vs%20mp/New%20folder/Video-Gallery-main2/index.html" class="banner-cta link">Learn More</a>
+                </div>
+            </div>
+            <div class="banner-img-container">
+                <img src="img/banner-img-2.jpg" alt="" class="banner-img">
+            </div>
+        </div>
+        <div class="banner-container">
+            <div class="banner-content-container">
+                <div class="banner-content">
+                    <h3 class="banner-title">For Pregnant Women</h3>
+                    <p class="banner-desc">
+                        Much like other types of childbirth-preparation classes, prenatal yoga 
+                        is a multifaceted approach to exercise that encourages stretching, mental 
+                        centering and focused breathing. Research suggests that prenatal yoga is safe 
+                        and can have many benefits for pregnant women and their babies.
+                    </p>
+                    <a href="file:///C:/Users/91985/Downloads/vs%20mp/New%20folder/Video-Gallery-main3/index.html" class="banner-cta link">Learn More</a>
+                </div>
+            </div>
+            <div class="banner-img-container">
+                <img src="img/banner-img-3.jpg" alt="" class="banner-img">
+            </div>
+        </div>
+        <div class="banner-container">
+            <div class="banner-content-container">
+                <div class="banner-content">
+                    <h3 class="banner-title">For Weight Loss</h3>
+                    <p class="banner-desc">
+                        The development of yoga has benefited many people in losing weight in a healthy way. 
+                        Yoga for weight loss is a debatable topic. Many people believe that Yoga alone does 
+                        not promote weight loss. Yoga, when combined with healthy eating, has proven 
+                        beneficial as it helps to lose weight along with keeping your mind and body healthy. 
+                        Yoga increases your mindfulness and how you relate to your body. 
+                        You will start seeking out food that is healthy instead of binging on food that can 
+                        increase your fat accumulation.
+                    </p>
+                    <a href="file:///C:/Users/91985/Downloads/vs%20mp/New%20folder/Video-Gallery-main4/index.html" class="banner-cta link">Learn More</a>
+                </div>
+            </div>
+            <div class="banner-img-container">
+                <img src="img/banner-img-4.jpg" alt="" class="banner-img">
+            </div>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-info-container">
+                <table class="contact-info">
+                    <tr>
+                        <td><i class="fas fa-envelope"></i></td>
+                        <td>yogahealthcar@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-phone-alt"></i></td>
+                        <td>9770829770 <br> 9866213770</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-map-marker-alt"></i></td>
+                        <td>Antop Hill, <br> Mumbai East <br> Mumbai 400037, India</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="contact-form-container">
+                <form action="#" class="contact-form">
+                    <div class="contact-input-container">
+                        <input type="text" class="input" placeholder="Name">
+                    </div>
+                    <div class="contact-input-container">
+                        <input type="email" class="input" placeholder="Email">
+                    </div>
+                    <div class="contact-input-container">
+                        <textarea class="msg-input" cols="30" rows="10" placeholder="Your message"></textarea>
+                    </div>
+                    <div class="contact-input-container">
+                        <input type="submit" class="input" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="testimonial-container">
+            <div class="testimonials">
+                <div class="slide-btn">
+                    <div class="btn bg" id="btn-1"></div>
+                    <div class="btn" id="btn-2"></div>
+                    <div class="btn" id="btn-3"></div>
+                </div>
+                <div class="user-container" id="user-1">
+                    <div class="user-img-container">
+                        <img src="img/testimonials-1.jpg" alt="" class="user-img">
+                    </div>
+                    <div class="user-info">
+                        <p class="user-name">Guru Swami Ramdev Baba</p>
+                        <p class="user-message">“If you can control the rising of the mind into ripples, you will experience Yoga.”</p>
+                    </div>
+                </div>
+                <div class="user-container" id="user-2">
+                    <div class="user-img-container">
+                        <img src="img/testimonials-2.jpg" alt="" class="user-img">
+                    </div>
+                    <div class="user-info">
+                        <p class="user-name">Tirumalai Krishnamacharya</p>
+                        <p class="user-message">"Master your breath, let the self be in bliss, contemplate on the sublime within you...."</p>
+                    </div>
+                </div>
+                <div class="user-container" id="user-3">
+                    <div class="user-img-container">
+                        <img src="img/testimonials-3.jpg" alt="" class="user-img">
+                    </div>
+                    <div class="user-info">
+                        <p class="user-name">Maharishi Mahesh Yogi</p>
+                        <p class="user-message">“Happiness radiates like the fragrance from a flower, and draws all good things toward you."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="news-letter">
+            <p class="news-letter-title">News Letter</p>
+            <form action="#" class="news-letter-form">
+                <input type="email" id="news-letter-email" placeholder="Enter your email..">
+                <input type="submit" id="news-letter-submit">
+            </form>
+        </div>
+        <div class="footer-border"></div>
+        <div class="footer-content-container">
+            <div class="footer-content">
+                <a href="#" class="link footer-logo">yoga</a>
+                <p class="company-desc">If you have any doubt about our yoga related issues 
+                    or any problems from your point of view which we can improve please contact
+                     or email us.</p>
+                <table class="footer-contact-info">
+                    <tr>
+                        <td><i class="fas fa-envelope"></i></td>
+                        <td>yogahealthcar@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-phone-alt"></i></td>
+                        <td>9770829770 <br> 9866213770</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-map-marker-alt"></i></td>
+                        <td>Antop Hill, <br> Mumbai East <br> Mumbai 400037, India</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="footer-nav-container">
+                <p class="footer-title">Useful Links</p>
+                <nav class="footer-nav">
+                    <ul class="footer-nav-list">
+                        <li class="footer-nav-item">
+                            <a href="#" class="footer-nav-link link">Home</a>
+                        </li>
+                        <li class="footer-nav-item">
+                            <a href="file:///C:/Users/91985/Downloads/vs%20mp/about.html" class="footer-nav-link link">About us</a>
+                        </li>
+                        <li class="footer-nav-item">
+                            <a href="file:///C:/Users/91985/Downloads/vs%20mp/contact.html" class="footer-nav-link link">Contact us</a>
+                        </li>
+                        <li class="footer-nav-item">
+                            <a href="https://www.ayuryoga-ashram.com/blog/" class="footer-nav-link link">Blogs</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="latest-post-container">
+                <p class="footer-title">Latest Post</p>
+                <a class="latest-post link" href="file:///C:/Users/91985/Downloads/vs%20mp/New%20folder/Video-Gallery-main1/index.html">
+                    <div class="latest-post-img-container">
+                        <img src="img/banner-img-1.jpg" alt="" class="latest-post-img">
+                    </div>
+                    <div class="latest-post-content">
+                        <p class="latest-post-title">Your recent activity1.</p>
+                        <p class="latest-post-desc">Natural Environment Study
+                        </p>
+                    </div>
+                </a>
+                <a class="latest-post link" href="file:///C:/Users/91985/Downloads/vs%20mp/New%20folder/Video-Gallery-main2/index.html">
+                    <div class="latest-post-img-container">
+                        <img src="img/banner-img-2.jpg" alt="" class="latest-post-img">
+                    </div>
+                    <div class="latest-post-content">
+                        <p class="latest-post-title">Your recent activity2.</p>
+                        <p class="latest-post-desc">Friendly Environment Study
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="social-nav-container">
+            <ul class="social-nav-list">
+                <li class="social-nav-item">
+                    <a href="https://www.facebook.com/pages/category/Medical---Health/Yoga-And-Health-Care-1002423996586274/" class="link social-link">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                </li>
+                <li class="social-nav-item">
+                    <a href="https://www.instagram.com/yogainhealthcare/" class="link social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="social-nav-item">
+                    <a href="https://twitter.com/yogainhealth" class="link social-link">
+                        <i class="fab fa-twitter-square"></i>
+                    </a>
+                </li>
+                <li class="social-nav-item">
+                    <a href="https://www.youtube.com/channel/UCHkOhacXovgGqo29zBCixcQ" class="link social-link">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p class="copy-text">Copyright &copy;2022 Non Degree Programmer All Rights Reserved</p>
+        </div>
+    </footer>
+    <script src="main.js"></script> -->
+ 
+</body>
+
+</html>
